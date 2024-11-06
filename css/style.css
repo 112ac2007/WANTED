@@ -1,0 +1,386 @@
+@font-face{
+    font-family:'jf-openhuninn';
+    src: url(/font/jf-openhuninn-2.1.eot),
+        url(/font/jf-openhuninn-2.1.ttf),
+        url(/font/jf-openhuninn-2.1.woff);
+}
+
+@font-face{
+    font-family: 'DFHeiUBold-B5';
+    src: url(/font/DFHeiUBold-B5.ttc);
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-text-stroke: 0;
+    font-weight: normal;
+}
+
+body{
+    background-color: #F0E7D9;
+    background-image: url(/image/old-2012064_1920.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.backgroundImaga{
+    max-width: fit-content;
+    max-height: fit-content;
+    background-image: url(/image/old-2012064_1920.jpg);
+}
+
+.websize{
+    display: flex;
+    flex-direction: column;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.decoration{
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    width: 541px;
+    border-top: 8px solid #20160F;
+    border-radius: 3px;
+}
+
+.circle{
+    margin: 0px 67px;
+    background-color: #20160F;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.title{
+    display: flex;
+    height: 171px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img{
+    width: 120px;
+    height: 120px;
+}
+
+.title h1{
+    margin: 0px;
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-size: 160px;
+    letter-spacing: 16px;
+    color: #20160F;
+}
+
+header nav{
+    display: flex;
+    background-color: #20160F;
+    height: 53px;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+
+
+ /* BOSS */
+.boss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: horizontal;
+    border: #20160F solid 8px;
+    border-radius: 3px;
+    width: 1232px;
+    height: 544px;
+}
+
+.boss_info{
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    align-items: flex-start;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    border: #20160F solid 8px;
+    border-radius: 3px;
+    width: 421px;
+    height: 454px;
+    margin-left: 21px;
+
+}
+
+.boss img{
+    width: 722px;
+    height: 455px;
+    margin: 0px;
+}
+
+.boss_info h1{
+    font-family: "DFHeiUBold-B5";
+    font-size: 60px;
+    color: #20160F;
+    margin-bottom: 23px;
+ 
+}
+
+.boss_info p{
+    margin-top: 0px;
+    font-family: "jf-openhuninn";
+    font-size: 18px;
+    color: #20160F;
+    line-height: 150%;
+    text-align: left;
+}
+
+.report-button{
+    background-color: #20160F;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+   
+}
+
+
+
+ /* CRIMINAL */
+.criminal{
+    display: flex;
+    flex-direction: column; 
+    border-top: 8px solid #20160F; 
+    border-bottom: 8px solid #20160F;
+    border-radius: 3px;
+    width: 1232px;
+    height: 836px;
+    margin-top: 53px;
+    align-items: center
+}
+
+.criminal h1{
+    font-family: "DFHeiUBold-B5";
+    font-size: 60px;
+    color: #20160F;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+
+ 
+}
+
+.criminal line{
+    width: 1134px;
+    height: 3px;
+    background-color: #20160F;
+    border: #20160F solid 4px;
+}
+
+.criminal_info {
+    display: flex;              /* 使用 Flexbox 布局 */
+    justify-content: center;    /* 水平居中对齐 */
+    align-items: center;
+    margin: 110px 0;           /* 上下外边距 */
+    width: 1232px;
+}
+
+.criminal_info button{
+    height: 69px;
+    background-color: transparent;
+    border: none;
+}
+
+.Card{
+    width: 346px;         
+    height: 463px;
+    margin: 0 25px;  
+}
+
+.flipContainer{
+    position: relative;
+    width: 346px; 
+    height: 463px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.infoCardFront{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 346px;
+    height: 463px;
+}
+
+.infoCardFront img{
+    width: 346px;
+    height: 463px;
+}
+
+.infoCardBack{
+    position: absolute;
+    display: flex;
+    width: 346px;
+    height: 463px;
+    background-color: #20160F;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 22px 23px 22px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg) !important;
+}
+
+.infoCardBack h2{
+    color: white;
+}
+
+.prisonerName{
+    font-size: 36px;
+}
+
+.crimeinfo{
+    width: 302px;
+    margin-top: 42px;
+}
+
+.crimeinfo p{
+    font-family:'jf-openhuninn';
+    font-size: 20px;
+    color: white;
+}
+
+.line3{
+    border-top: 3px solid white;
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+
+.infobutton{
+    position: absolute;
+    bottom: 36px;
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    height: 47px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.infobutton h2{
+    color: #20160F;
+    margin-top: 10px;
+}
+
+/*卡片翻轉效果*/
+
+.flipped{
+    transform: rotateY(180deg);
+}
+
+ /* FOOT */
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section{
+    display: flex;
+    width: 154px;
+    margin: 0px 19px;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.section a{
+    text-decoration: none;
+}
+
+.section p{
+    margin: 0px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-left: 23px;
+    margin-top: 12px;
+    width: 158px;
+    height: 28px;
+}
+
+.time div{
+    width: 3px;
+    border-left: 3px solid white;
+}
+
+.time p{
+    margin: 0px;
+    font-family: "Lexend Zetta", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+article{
+    height: 1497px;
+    margin: 53px auto;
+    
+
+}
+
+footer{
+    height: 305px;
+    background-color: #20160F;
+}
+
+.footerArea{
+    max-width: 1232px;
+    height: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+h2{
+    margin: 0px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+}
+
+.contactInfo p{
+    font-family:'jf-openhuninn';
+    line-height: 150%;
+    color: white;
+}
+
+.contactInfo div{
+    margin-top: 5px;
+    margin-bottom: 11px;
+    border-top: 3px solid white;
+    width: 400px;
+    height: 3px;
+}
