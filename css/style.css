@@ -1,13 +1,13 @@
 @font-face{
     font-family:'jf-openhuninn';
-    src: url(/font/jf-openhuninn-2.1.eot),
-        url(/font/jf-openhuninn-2.1.ttf),
-        url(/font/jf-openhuninn-2.1.woff);
+    src: url("../font/jf-openhuninn-2.1.eot"),
+        url('../font/jf-openhuninn-2.1.ttf'),
+        url('../font/jf-openhuninn-2.1.woff');
 }
 
 @font-face{
     font-family: 'DFHeiUBold-B5';
-    src: url(/font/DFHeiUBold-B5.ttc);
+    src: url('../font/DFHeiUBold-B5.ttc');
 }
 
 *{
@@ -18,7 +18,7 @@
 
 body{
     background-color: #F0E7D9;
-    background-image: url(/image/old-2012064_1920.png);
+    background-image: url('../image/old-2012064_1920.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body{
 .backgroundImaga{
     max-width: fit-content;
     max-height: fit-content;
-    background-image: url(/image/old-2012064_1920.jpg);
+    background-image: url('../image/old-2012064_1920.jpg');
 }
 
 .websize{
