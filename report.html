@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +21,23 @@
     <div class="websize">
         <header>
             <div class="decoration">
-                <div class="line"></div>
-                <div class="circle"></div>
-                <div class="line"></div>
+                <div class="line1"></div>
+                <div class="spacing"></div>
+                <div class="line2"></div>
             </div>
             <div class="title">
                 <img src="./image/police-badge-seeklogo-01.png" alt="logo">
                 <h1>WANTED</h1>
                 <img src="./image/police-badge-seeklogo-01.png" alt="logo">
+            </div>
+            <div class="smalltime">
+                <div class="time">
+                    <p id="date">31</p>
+                    <div></div>
+                    <p id="month">10</p>
+                    <div></div>
+                    <p id="year">2024</p>
+                </div>
             </div>
             <nav>
                 <div class="time">
@@ -40,11 +51,11 @@
                     <div class="section">
                         <a href="./index.html"><p>首頁</p></a>
                     </div>
-                    <div class="section">
-                        <a href="./index.html#prisoners"><p>通緝犯資料</p></a>
+                    <div class="section" id="secondsection">
+                        <a href="javascript:void(0);" onclick="document.getElementById('prisoners').scrollIntoView({behavior: 'smooth'});"><p>通緝犯資料</p></a>
                     </div>
                     <div class="section">
-                        <a><p>目擊者通報</p></a>
+                        <a href="./report.html"><p>目擊者通報</p></a>
                     </div>
                 </div>
             </nav>
@@ -53,41 +64,50 @@
 
 
         <article>
-
             <div class="secondtitle">
                 <h1>REPORT</h1>
             </div>
             <div class="report_box">
                 <div class="citizen">
-                    <div class="form">
-                        <div class="form-row">
-                            <label>姓名</label><input type="text">
+                    <div class="liner">
+                        <div class="formtitle">
+                            <p>通報者資訊</p>
                         </div>
-                        <div class="form-row">
-                            <label>市民編號</label><input type="text">
-                        </div>
-                        <div class="form-row">
-                            <label>連絡電話</label><input type="text">
-                        </div>
-                        <div class="form-row">
-                            <label>聯絡地址</label><input type="text">
+                        <div class="form">
+                            <div class="form-row">
+                                <label>姓名</label><input type="text">
+                            </div>
+                            <div class="form-row">
+                                <label>市民編號</label><input type="text">
+                            </div>
+                            <div class="form-row">
+                                <label>連絡電話</label><input type="text">
+                            </div>
+                            <div class="form-row">
+                                <label>聯絡地址</label><input type="text">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="criminal_report">
-                    <div class="form">
-                        <div class="form-row">
-                            <label>罪犯編號</label><input type="text">
-                        </div>
-                        <div class="form-row">
-                            <label>發現時間</label><input type="text">
-                        </div>
-                        <div class="form-row">
-                            <label>發現地點</label><input type="text">
-                        </div>
-                        <div class="form-row">
-                            <label>詳細經過</label><input type="text">
+                    <div class="liner">
+                            <div class="formtitle">
+                                <p>通緝犯資訊</p>
+                            </div>
+                        <div class="form">
+                            <div class="form-row">
+                                <label>罪犯編號</label><input type="text">
+                            </div>
+                            <div class="form-row">
+                                <label>發現時間</label><input type="text">
+                            </div>
+                            <div class="form-row">
+                                <label>發現地點</label><input type="text">
+                            </div>
+                            <div class="form-row">
+                                <label>詳細經過</label><input type="text">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,9 +124,6 @@
 
 
         </article>
-
-
-
 
     </div>
     <footer>
